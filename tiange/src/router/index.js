@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import css01 from '@/views/CSS/CSS01'
 import css02 from '@/views/CSS/CSS02'
 import css03 from '@/views/CSS/CSS03'
+import css04 from '@/views/CSS/CSS04'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/CSS03',
       name: 'CSS03',
       component: css03
+    },
+    {
+      path: '/CSS04',
+      name: 'CSS04',
+      component: css04
     }
   ]
 })
