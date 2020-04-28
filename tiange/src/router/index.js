@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import css01 from '@/views/CSS/CSS01'
 import css02 from '@/views/CSS/CSS02'
+import css03 from '@/views/CSS/CSS03'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/CSS02',
       name: 'CSS02',
       component: css02
+    },
+    {
+      path: '/CSS03',
+      name: 'CSS03',
+      component: css03
     }
   ]
 })
