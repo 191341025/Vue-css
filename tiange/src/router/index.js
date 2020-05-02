@@ -6,6 +6,7 @@ import css02 from '@/views/CSS/CSS02'
 import css03 from '@/views/CSS/CSS03'
 import css04 from '@/views/CSS/CSS04'
 import css05 from '@/views/CSS/CSS05'
+import css06 from '@/views/CSS/CSS06'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/CSS05',
       name: 'CSS05',
       component: css05
+    },
+    {
+      path: '/CSS06',
+      name: 'CSS06',
+      component: css06
     }
   ]
 })
