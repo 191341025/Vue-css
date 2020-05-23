@@ -44,36 +44,40 @@
     align-items center
     height 80px
   .loading-item
-    width 5px
+    width 3px
     height:15px
     margin-left 5px
     background-color #008800
-    animation loading 0.5s infinite
+    animation loading .5s infinite
     animation-direction alternate
+
   .ani2
-    animation-delay 0.1s
+    animation-delay .1s
   .ani3
-    animation-delay 0.2s
+    animation-delay .2s
   .ani4
-    animation-delay 0.3s
+    animation-delay .3s
   .ani5
-    animation-delay 0.4s
+    animation-delay .4s
 
   @keyframes loading
     20% {
       height 15px
     }
     40% {
-      height 18px
+      height 17px
     }
     60% {
-      height 21px
+      height 15px
     }
     80% {
-      height 24px
+      height 30px
+    }
+    90% {
+      height 35px
     }
     100% {
-      height 27px
+      height 40px
     }
 
 </style>
