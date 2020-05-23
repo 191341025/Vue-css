@@ -2,19 +2,19 @@
   <div>
     <div class="title-div">页面加载等待动画例子</div>
     <div class="loading-div">
-      <div class="loading-item ani1">
+      <div class="loading-item">
 
       </div>
-      <div class="loading-item ani2">
+      <div class="loading-item">
 
       </div>
-      <div class="loading-item ani3">
+      <div class="loading-item">
 
       </div>
-      <div class="loading-item ani4">
+      <div class="loading-item">
 
       </div>
-      <div class="loading-item ani5">
+      <div class="loading-item">
 
       </div>
     </div>
@@ -51,23 +51,18 @@
     animation loading .5s infinite
     animation-direction alternate
 
-  .ani2
-    animation-delay .1s
-  .ani3
-    animation-delay .2s
-  .ani4
-    animation-delay .3s
-  .ani5
-    animation-delay .4s
+  .loading-div div:nth-child(2)
+    animation-delay 1.1s
+  .loading-div div:nth-child(3)
+    animation-delay 1.2s
+  .loading-div div:nth-child(4)
+    animation-delay 1.3s
+  .loading-div div:nth-child(5)
+    animation-delay 1.4s
+
 
   @keyframes loading
-    20% {
-      height 15px
-    }
-    40% {
-      height 17px
-    }
-    60% {
+    20%, 40%, 60% {
       height 15px
     }
     80% {
