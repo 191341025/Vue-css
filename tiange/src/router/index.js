@@ -10,10 +10,12 @@ import css06 from '@/views/CSS/CSS06'
 import css07 from '@/views/CSS/CSS07'
 import css08 from '@/views/CSS/CSS08'
 import css09 from '@/views/CSS/CSS09'
+import css10 from '@/views/CSS/CSS10'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -64,6 +66,11 @@ export default new Router({
       path: '/CSS09',
       name: 'CSS09',
       component: css09
+    },
+    {
+      path: '/CSS10',
+      name: 'CSS10',
+      component: css10
     }
   ]
 })
