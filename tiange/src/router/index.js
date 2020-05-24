@@ -13,6 +13,7 @@ import css09 from '@/views/CSS/CSS09'
 import css10 from '@/views/CSS/CSS10'
 import css11 from '@/views/CSS/CSS11'
 import css12 from '@/views/CSS/CSS12'
+import css13 from '@/views/CSS/CSS13'
 
 Vue.use(Router)
 
@@ -83,6 +84,11 @@ export default new Router({
       path: '/CSS12',
       name: 'CSS12',
       component: css12
+    },
+    {
+      path: '/CSS13',
+      name: 'CSS13',
+      component: css13
     }
   ]
 })
