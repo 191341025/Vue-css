@@ -52,13 +52,13 @@
     animation-direction alternate
 
   .loading-div div:nth-child(2)
-    animation-delay 1.1s
+    animation-delay .2s
   .loading-div div:nth-child(3)
-    animation-delay 1.2s
+    animation-delay .3s
   .loading-div div:nth-child(4)
-    animation-delay 1.3s
+    animation-delay .4s
   .loading-div div:nth-child(5)
-    animation-delay 1.4s
+    animation-delay .5s
 
 
   @keyframes loading
