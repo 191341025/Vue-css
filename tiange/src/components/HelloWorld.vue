@@ -1,16 +1,19 @@
 <template>
-  <div>
-    <button @click="popUp">popUp</button>
-    <div class="popup__wrapper">
-      <div class="popup">
-        <div class="popup__title">Confirmation</div>
-        <div class="popup__text">Are you sure you want to do this action?</div>
-        <div class="popup__btnWrapper">
-          <button class="popup__yesBtn">Yes</button>
-          <button class="popup__noBtn">No</button>
-        </div>
-      </div>
-    </div>
+  <div class="main-div">
+    <div class="title-div">这是8001端口的项目</div>
+    <button @click="popUp('01')">CSS01</button>
+    <button @click="popUp('02')">CSS02</button>
+    <button @click="popUp('03')">CSS03</button>
+    <button @click="popUp('04')">CSS04</button>
+    <button @click="popUp('05')">CSS05</button>
+    <button @click="popUp('06')">CSS06</button>
+    <button @click="popUp('07')">CSS07</button>
+    <button @click="popUp('08')">CSS08</button>
+    <button @click="popUp('09')">CSS09</button>
+    <button @click="popUp(10)">CSS010</button>
+    <button @click="popUp(11)">CSS011</button>
+    <button @click="popUp(12)">CSS012</button>
+    <button @click="popUp(13)">CSS013</button>
   </div>
 </template>
 
@@ -23,63 +26,38 @@ export default {
     }
   },
   methods: {
-    popUp: function () {
-      // console.log('hellow')
+    popUp: function (val) {
+
+      this.$router.push({
+        name: 'CSS' + val,
+      })
     }
   }
 }
 </script>
 
 <style scoped>
-
-.popup__wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  display: flex;
-  justify-content: center;
+.main-div {
+  position: relative;
+  display: grid;
   align-items: center;
+  justify-content: center;
+  margin: 20px;
+
 }
-.popup {
-  box-sizing: border-box;
-  width: 670px;
-  height: 300px;
-  background: #fff;
+.title-div {
+  font-size: 2.4rem;
   text-align: center;
-  padding: 70px 10px 20px 10px;
-  border-radius: 4px;
+  margin: 10px auto;
 }
-.popup__title{
-  font-size: 30px;
-  font-weight: 600;
-  color: #004165;
-  margin-bottom: 20px;
-}
-.popup__btnWrapper {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.popup__text{
-  font-size: 20px;
-  margin-bottom: 50px;
-}
+
+
 button{
-  width: 154px;
   cursor: pointer;
   border-radius: 4px;
   line-height: 45px;
   font-weight: 600;
-}
-.popup__yesBtn {
-  color: #fff;
-  background-color: #007dba;
-  border: 1px solid #006ba1;
+  margin-top: 10px;
 }
 
 </style>
