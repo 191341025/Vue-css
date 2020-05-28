@@ -22,11 +22,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/CSS01',
       name: 'CSS01',
       component: css01
     },
