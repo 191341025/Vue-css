@@ -35,6 +35,7 @@
 
 <script>
 // 动态伪类选择器 它不存在于Html页面中
+// 这是Master 主分支内容
 export default {
   name: 'CSS02'
 }
