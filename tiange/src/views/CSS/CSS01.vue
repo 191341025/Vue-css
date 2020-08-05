@@ -1,6 +1,7 @@
 <template>
   <div>
     <img src="./avatarPlaceholder.png"/>
+    <hello-world></hello-world>
   </div>
 </template>
 
